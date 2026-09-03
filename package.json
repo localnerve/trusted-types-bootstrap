@@ -1,0 +1,74 @@
+{
+  "name": "@localnerve/trusted-types-bootstrap",
+  "version": "0.1.0-rc.1",
+  "description": "Page-level Trusted Types bootstrap for web apps: one import + config call replaces the per-app inline bootstrap script. Optional DOMPurify-backed sanitizer policy sub-path.",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./sanitize": "./lib/sanitize.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "node -e \"const fs=require('fs');fs.rmSync('./coverage',{recursive:true,force:true});fs.mkdirSync('./coverage',{recursive:true})\"",
+    "test": "node --test --experimental-test-coverage --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=coverage/lcov.info --test-coverage-exclude=\"__tests__/**\" ./__tests__/*.spec.js"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/localnerve/trusted-types-bootstrap.git"
+  },
+  "keywords": [
+    "trusted types",
+    "csp",
+    "content security policy",
+    "xss",
+    "sanitize",
+    "web security",
+    "bootstrap"
+  ],
+  "author": {
+    "name": "Alex Grant",
+    "email": "alex@localnerve.com",
+    "url": "https://www.localnerve.com"
+  },
+  "maintainers": [
+    {
+      "name": "Alex Grant",
+      "email": "alex@localnerve.com",
+      "url": "https://www.localnerve.com"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/localnerve/trusted-types-bootstrap/issues"
+  },
+  "homepage": "https://github.com/localnerve/trusted-types-bootstrap#readme",
+  "dependencies": {
+    "dompurify": "^3.4.14"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.9.1",
+    "eslint-plugin-n": "^18.3.0",
+    "globals": "^17.12.0",
+    "he": "^1.2.0",
+    "jsdom": "^30.0.1"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/localnerve"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.com/ncp/payment/DHCB5GUYMGX5U"
+    }
+  ],
+  "engines": {
+    "node": ">=22"
+  }
+}
