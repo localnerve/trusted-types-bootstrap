@@ -1,6 +1,6 @@
 {
   "name": "@localnerve/trusted-types-bootstrap",
-  "version": "0.1.0-rc.1",
+  "version": "1.0.0",
   "description": "Page-level Trusted Types bootstrap for web apps: one import + config call replaces the per-app inline bootstrap script. Optional DOMPurify-backed sanitizer policy sub-path.",
   "main": "index.js",
   "type": "module",
