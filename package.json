@@ -1,6 +1,6 @@
 {
   "name": "@localnerve/trusted-types-bootstrap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Page-level Trusted Types bootstrap for web apps: one import + config call replaces the per-app inline bootstrap script. Optional DOMPurify-backed sanitizer policy sub-path.",
   "main": "index.js",
   "type": "module",
@@ -48,15 +48,15 @@
   },
   "homepage": "https://github.com/localnerve/trusted-types-bootstrap#readme",
   "dependencies": {
-    "dompurify": "^3.4.14"
+    "dompurify": "^3.4.16"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "eslint": "^10.9.1",
-    "eslint-plugin-n": "^18.3.0",
-    "globals": "^17.12.0",
-    "he": "^1.2.0",
-    "jsdom": "^30.0.1"
+    "eslint": "^10.12.0",
+    "eslint-plugin-n": "^18.4.1",
+    "globals": "^17.13.0",
+    "he": "^2.0.0",
+    "jsdom": "^30.1.2"
   },
   "funding": [
     {
